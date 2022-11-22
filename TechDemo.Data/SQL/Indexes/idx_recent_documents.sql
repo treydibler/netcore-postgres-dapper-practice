@@ -1,0 +1,1 @@
+CREATE INDEX idx_added ON "document" using brin(added);

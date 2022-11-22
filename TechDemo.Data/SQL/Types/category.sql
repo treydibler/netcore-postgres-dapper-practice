@@ -1,0 +1,1 @@
+CREATE TYPE category AS ENUM ('cramer', 'inverse_cramer');

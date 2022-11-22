@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+        <LangVersion>default</LangVersion>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\TechDemo.Data\TechDemo.Data.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Reference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation">
+        
+      </Reference>
+      <Reference Include="Microsoft.AspNetCore.Http.Features">
+        
+      </Reference>
+      <Reference Include="Microsoft.Extensions.Configuration.Abstractions">
+        
+      </Reference>
+      <Reference Include="Microsoft.Extensions.Identity.Core">
+        
+      </Reference>
+      <Reference Include="Microsoft.Extensions.Logging.Abstractions">
+        
+      </Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Cryptography.KeyDerivation" Version="7.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="5.0.17" />
+      <PackageReference Include="Microsoft.Extensions.Identity.Core" Version="7.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
+      <PackageReference Include="Microsoft.IdentityModel.JsonWebTokens" Version="6.25.0" />
+      <PackageReference Include="Npgsql" Version="7.0.0" />
+    </ItemGroup>
+
+</Project>

@@ -1,0 +1,24 @@
+version: '3.4'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Web.Dockerfile
+    ports:
+      - "5005:5005"
+    expose:
+      - "5005"
+  db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      POSTGRES_USER: sa
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      POSTGRES_HOST: localhost
+    ports:
+      - "5432:5432"
+    expose:
+      - "5432"
+networks:
+  techdemo:
